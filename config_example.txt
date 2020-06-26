@@ -1,0 +1,8 @@
+go: data/go_cafa3.obo
+lookup_set:
+annotations: data/goa_annotations_2017.txt
+targets: data/targets.npz
+onto: all
+thresh: 1
+type: num
+output: results/targets

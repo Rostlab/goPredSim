@@ -15,9 +15,12 @@ class EmbeddingLookup(object):
         self.ids, raw_data = zip(*self.embedding_db.items())
         self.data_tensor = torch.tensor(raw_data).squeeze()
 
-        # print(self.data_tensor.size())
-
     def run_embedding_lookup_euclidean(self, querys):
+        """
+        Calculate embedding distance using Euclidean distance of all querys against the lookup database
+        :param querys: querys for which distances should be calculated
+        :return: 
+        """
 
         query_ids, raw_data_query = zip(*querys.items())
         query_tensor = torch.tensor(raw_data_query).squeeze()
@@ -29,6 +32,11 @@ class EmbeddingLookup(object):
         return distances, query_ids
 
     def run_embedding_lookup_cosine(self, querys):
+        """
+        Calculate embedding distance using cosine distance of all querys against the lookup database
+        :param querys: 
+        :return: 
+        """
 
         query_ids, raw_data_query = zip(*querys.items())
         query_tensor = torch.tensor(raw_data_query).squeeze()

@@ -68,17 +68,6 @@ class GeneOntology(object):
             new_parents = self._set_parents(go_term)
             self.all_go[go_term]['parents'].update(new_parents)
 
-        # exclude parents that are not part of the database  # TODO needed?
-        # for go_term in self.all_go.keys():
-        #     parents = set(self.all_go[go_term]['parents'])
-        #     to_remove = set()
-        #     for p in parents:
-        #         if p not in self.all_go.keys():
-        #             to_remove.add(p)
-        #     for t in to_remove:
-        #         parents.remove(t)
-        #     self.all_go[go_term]['parents'] = parents
-
     def _set_parents(self, term):
         new_parents = set()
 

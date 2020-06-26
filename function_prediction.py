@@ -37,6 +37,14 @@ class FunctionPrediction(object):
         return terms_by_go
 
     def run_prediction_embedding_all(self, querys, distance, hits, criterion):
+        """
+        Perform inference based on embedding-similarity
+        :param querys: proteins for which GO terms should be predicted
+        :param distance: distance measure to use [euclidean|cosine]
+        :param hits: hits to include (either by distance or by number as defined with criterion)
+        :param criterion: should k closest hits or all hits with distance <k be included?
+        :return: 
+        """
 
         predictions = defaultdict(defaultdict)
         hit_ids = defaultdict(defaultdict)
@@ -75,6 +83,7 @@ class FunctionPrediction(object):
                     dist = dists[ind]
 
                     if distance == 'euclidean':
+                        # scale distance to reflect a similarity [0;1]
                         dist = 2 / (2 + dist)
                     elif distance == 'cosine':
                         dist = 1 - dist
@@ -120,33 +129,3 @@ class FunctionPrediction(object):
                 predictions[h][query] = prediction
 
         return predictions, hit_ids
-
-    @staticmethod
-    def write_predictions_cafa(predictions, out_file, model_num):
-        """
-        Write prediictions in CAFA format
-        :param predictions: predictions to write
-        :param out_file: output file
-        :param model_num: number of model that is used
-        :return:
-        """
-        with open(out_file, 'w') as out:
-            out.write('AUTHOR\tRostlab2\nMODEL\t{}\nKEYWORDS\thomolog, machine learning, natural language processing.'
-                      '\n'.format(model_num))
-            for p in predictions.keys():
-                prediction = predictions[p]
-                for pred in prediction.keys():
-                    ri = prediction[pred]
-                    out.write('{}\t{}\t'.format(p, pred))
-                    out.write('{:0.2f}\n'.format(float(ri)))
-            out.write('END')
-
-    @staticmethod
-    def write_hits(hits, out_file):
-        with open(out_file, 'w') as out:
-            out.write('Query\tHit\tRI\n')
-            for q in hits.keys():
-                h = hits[q]
-                for k in h.keys():
-                    ri = h[k]
-                    out.write('{}\t{}\t{}\n'.format(q, k, ri))

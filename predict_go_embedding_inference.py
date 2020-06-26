@@ -31,7 +31,8 @@ def main():
     # perform prediction for each ontology individually
     for o in ontologies:
         predictor = FunctionPrediction(embeddings, go_annotations, go, o)
-        predictions_all, _ = predictor.run_prediction_embedding_all(test_embeddings, 'euclidean', dist_cutoffs, 'num')
+        predictions_all, _ = predictor.run_prediction_embedding_all(test_embeddings, 'euclidean', dist_cutoffs,
+                                                                    config_data['modus'])
 
         # write predictions for each distance cutoff
         for dist in dist_cutoffs:

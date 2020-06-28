@@ -14,8 +14,8 @@ For both modi, all annotations are combined. The distance is converted into a si
 All important files and parameters have to be specificed in `config.txt`. The parameters and options are:
 
 - `go`: Gene Ontology (GO) [2] to use. The GO from CAFA3 is included as an example
-- `lookup_set`: Embeddings for lookup set
-- `annotations`: Annotations to use for transfer. The expected format is one line per protein with 1st column: identifer, 2nd column: comma-separated list of annotated GO terms. The GOA version from 2017 [3] with all Swiss-Prot sequences is included as an example.
+- `lookup_set`: Embeddings for lookup set. The embeddings for the `annotations` set are included as an example
+- `annotations`: Annotations to use for transfer. The expected format is one line per protein with 1st column: identifer, 2nd column: comma-separated list of annotated GO terms. The GOA [3] version from 2017 with all Swiss-Prot sequences is included as an example.
 - `targets`: Embeddings for target proteins for which GO term predictions should be calculated
 - `onto`: Ontology for which predictions should be made `[all|bpo|mfo|cco]`
 - `thresh`: Defines *k* (Number of neighbors to consider) or *d* (Distance threshold). Can be a comma-separated list of different values (all for the same modus)

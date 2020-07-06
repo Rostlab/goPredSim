@@ -1,5 +1,5 @@
 go: data/go_cafa3.obo
-lookup_set:
+lookup_set: data/goa_2017.npz
 annotations: data/goa_annotations_2017.txt
 targets: data/cafa3_targets.npz
 onto: all

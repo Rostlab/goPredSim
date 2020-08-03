@@ -1,5 +1,6 @@
 from two_sample_util import pdist, cosine_dist
 import torch
+import numpy
 
 
 class EmbeddingLookup(object):
@@ -22,7 +23,12 @@ class EmbeddingLookup(object):
         :return: 
         """
 
-        query_ids, raw_data_query = zip(*querys.items())
+        if isinstance(querys, dict):
+            query_ids, raw_data_query = zip(*querys.items())
+        else:
+            raw_data_query = querys
+            query_ids = range(0, numpy.shape(querys)[0])
+            
         query_tensor = torch.tensor(raw_data_query).squeeze()
         if len(query_ids) == 1:
             query_tensor = query_tensor.unsqueeze(0)
@@ -38,8 +44,15 @@ class EmbeddingLookup(object):
         :return: 
         """
 
-        query_ids, raw_data_query = zip(*querys.items())
+        if isinstance(querys, dict):
+            query_ids, raw_data_query = zip(*querys.items())
+        else:
+            raw_data_query = querys
+            query_ids = range(0, numpy.shape(querys)[0])
+            
         query_tensor = torch.tensor(raw_data_query).squeeze()
+        if len(query_ids) == 1:
+            query_tensor = query_tensor.unsqueeze(0)
 
         distances = cosine_dist(query_tensor, self.data_tensor)
 

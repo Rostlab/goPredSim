@@ -129,3 +129,84 @@ class FunctionPrediction(object):
                 predictions[h][query] = prediction
 
         return predictions, hit_ids
+
+    def run_prediction_one_target(self, query_embedding, distance, k, criterion):
+        """
+        Perform inference based on embedding-similarity for one query embedding
+        :param query_embedding: query to calculate prediction for
+        :param distance: distance measure to use [euclidean|cosine]
+        :param k: hits to include (either by distance or by number as defined with criterion)
+        :param criterion: Should k closest hits or all hits with distance <k be included?
+        :return: GO term predictions with RI
+        """
+
+        prediction = dict()
+
+        if distance == 'euclidean':
+            distances, _ = self.lookup_db.run_embedding_lookup_euclidean(query_embedding)
+        elif distance == 'cosine':
+            distances, _ = self.lookup_db.run_embedding_lookup_cosine(query_embedding)
+        else:
+            sys.exit("{} is not a correct distance".format(distance))
+
+        dists = distances[0, :].squeeze().numpy()
+
+        if criterion == 'dist':  # extract hits within a certain distance
+            indices = numpy.nonzero(dists <= k)
+        elif criterion == 'num':  # extract h closest hits
+            indices_tmp = numpy.argpartition(dists, k)[0:k]
+            dists_tmp = [dists[i] for i in indices_tmp]
+            max_dist = numpy.amax(dists_tmp)
+            indices = numpy.nonzero(dists <= max_dist)[0]
+        else:
+            sys.exit("No valid criterion defined, valid criterions are [dist|num]")
+
+        num_hits = len(indices)
+
+        for ind in indices:
+            lookup_id = self.lookup_db.ids[ind]
+            go_terms = self.go_db[lookup_id]
+            dist = dists[ind]
+
+            if distance == 'euclidean':
+                # scale distance to reflect a similarity [0;1]
+                dist = 2 / (2 + dist)
+            elif distance == 'cosine':
+                dist = 1 - dist
+
+            for g in go_terms:
+                if g in prediction.keys():
+                    # if multiple hits are included RIs get smaller --> predictions retrieved for different
+                    # numbers of hits are not directly comparable
+                    prediction[g] += dist / num_hits
+                else:
+                    prediction[g] = dist / num_hits
+
+                # round ri and remove hits with ri == 0.00
+                keys_for_deletion = set()
+                for p in prediction:
+                    ri = round(prediction[p], 2)
+                    if ri == 0.00:
+                        keys_for_deletion.add(p)
+                    else:
+                        prediction[p] = ri
+
+                for j in keys_for_deletion:
+                    del prediction[j]
+
+                # reduce prediction to leaf terms
+                parent_terms = []
+                for p in prediction.keys():
+                    parents = self.go.get_parent_terms(p)
+                    parent_terms += parents
+                    
+                # exclude terms that are parent terms, i.e. there are more specific terms also part of this prediction
+                keys_for_deletion = set()
+                for p in prediction.keys():
+                    if p in parent_terms:
+                        keys_for_deletion.add(p)
+
+                for k in keys_for_deletion:
+                    del prediction[k]
+
+        return prediction

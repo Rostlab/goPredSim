@@ -84,7 +84,7 @@ class FunctionPrediction(object):
 
                     if distance == 'euclidean':
                         # scale distance to reflect a similarity [0;1]
-                        dist = 2 / (2 + dist)
+                        dist = 1 / (1 + dist)
                     elif distance == 'cosine':
                         dist = 1 - dist
 
@@ -170,7 +170,7 @@ class FunctionPrediction(object):
 
             if distance == 'euclidean':
                 # scale distance to reflect a similarity [0;1]
-                dist = 2 / (2 + dist)
+                dist = 1 / (1 + dist)
             elif distance == 'cosine':
                 dist = 1 - dist
 

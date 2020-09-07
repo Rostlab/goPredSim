@@ -2,7 +2,7 @@ import torch
 import numpy as np
 
 
-def pdist(sample_1, sample_2, norm=2, eps=1e-5):
+def pdist(sample_1, sample_2, norm=2, eps=0):
     r"""Compute the matrix of all squared pairwise distances.
     Arguments
     ---------
@@ -20,7 +20,7 @@ def pdist(sample_1, sample_2, norm=2, eps=1e-5):
         ``|| sample_1[i, :] - sample_2[j, :] ||_p``."""
     n_1, n_2 = sample_1.size(0), sample_2.size(0)
     norm = float(norm)
-    if norm == 2.:
+    if math.isclose(norm, 2.0):
         norms_1 = torch.sum(sample_1**2, dim=1, keepdim=True)
         norms_2 = torch.sum(sample_2**2, dim=1, keepdim=True)
         norms = (norms_1.expand(n_1, n_2) +

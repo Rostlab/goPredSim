@@ -33,7 +33,7 @@ class EmbeddingLookup(object):
         if len(query_ids) == 1:
             query_tensor = query_tensor.unsqueeze(0)
 
-        distances = pdist(query_tensor, self.data_tensor, 2)
+        distances = pdist(query_tensor, self.data_tensor, 2, eps=0)
 
         return distances, query_ids
 

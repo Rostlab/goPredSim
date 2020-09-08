@@ -26,6 +26,12 @@ For a given config-file, GO term prediction can be performed with the following 
 
 `python predict_go_embedding_inference.py config.txt`
 
+## Embeddings
+
+ProtBert and SeqVec embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from ftp://rostlab.org/goPredSim
+The corresponding ids
+
+
 ## Requirements
 goPredSim is written in Python3. In order to execute goPredSim, Python3 has to be installed locally. Additionally, the following Python packages have to be installed:
 

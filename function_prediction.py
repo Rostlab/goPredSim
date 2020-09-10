@@ -49,12 +49,7 @@ class FunctionPrediction(object):
         predictions = defaultdict(defaultdict)
         hit_ids = defaultdict(defaultdict)
 
-        if distance == 'euclidean':
-            distances, query_ids = self.lookup_db.run_embedding_lookup_euclidean(querys)
-        elif distance == 'cosine':
-            distances, query_ids = self.lookup_db.run_embedding_lookup_cosine(querys)
-        else:
-            sys.exit("{} is not a correct distance".format(distance))
+        distances, query_ids = self.lookup_db.run_embedding_lookup_distance(querys, distance)
 
         for i in range(0, len(query_ids)):
             query = query_ids[i].split()[0]
@@ -141,14 +136,7 @@ class FunctionPrediction(object):
         """
 
         prediction = dict()
-
-        if distance == 'euclidean':
-            distances, _ = self.lookup_db.run_embedding_lookup_euclidean(query_embedding)
-        elif distance == 'cosine':
-            distances, _ = self.lookup_db.run_embedding_lookup_cosine(query_embedding)
-        else:
-            sys.exit("{} is not a correct distance".format(distance))
-
+        distances, _ = self.lookup_db.run_embedding_lookup_distance(query_embedding, distance)
         dists = distances[0, :].squeeze().numpy()
 
         if criterion == 'dist':  # extract hits within a certain distance

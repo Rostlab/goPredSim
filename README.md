@@ -29,7 +29,7 @@ For a given config-file, GO term prediction can be performed with the following 
 ## Embeddings
 
 ProtBert and SeqVec embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from ftp://rostlab.org/goPredSim
-The corresponding ids
+The corresponding ids for the embeddings can be found in `data/`. To successfully run goPredSim both the .npy-file and the .txt-file containing the ids have to be in the same directory.
 
 
 ## Requirements

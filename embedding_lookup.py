@@ -33,7 +33,7 @@ class EmbeddingLookup(object):
             
             raw_data_query = numpy.array(raw_data_query).squeeze()
             if len(query_ids) == 1:
-                raw_data_query = raw_data_query.unsqueeze(0)
+                raw_data_query = raw_data_query.reshape(1, -1)
 
             distances = pairwise_distances(raw_data_query, self.raw_data, metric=metric)
         else:

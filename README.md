@@ -30,7 +30,8 @@ For a given config-file, GO term prediction can be performed with the following 
 
 Embeddings were calculated using the pre-trained models SeqVec, publicly available [in the SeqVec repository](https://github.com/Rostlab/SeqVec), or ProtBert-BFD, publicly available [in the ProtTrans repository](https://github.com/agemagician/ProtTrans)
 
-The pre-computed embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from ftp://rostlab.org/goPredSim
+The pre-computed embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from ftp://rostlab.org/goPredSim.
+
 The corresponding ids for the embeddings can be found in `data/`. To successfully run goPredSim both the .npy-file and the .txt-file containing the ids have to be in the same directory.
 
 ## Requirements
@@ -40,6 +41,9 @@ goPredSim is written in Python3. In order to execute goPredSim, Python3 has to b
 - numpy
 - pathlib
 - scikit-learn
+
+## Availability as web service
+If you are only interested in running a few sequences, goPredSim is also available as a web service: https://embed.protein.properties/ or as part of PredictProtein [5]: https://predictprotein.org/
 
 ## Cite
 If you are using this method and find it helpful, we would appreciate if you could cite the following preprint:
@@ -55,3 +59,5 @@ Littmann M, Heinzinger M, Dallago C, Olenyi T, Rost B (2020). Embeddings from de
 [3] Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, Davis AP, Dolinski K, Dwight SS, Eppig JT (2000). Gene ontology: tool for the unification of biology. Nature genetics, **25**(1):25-29.
 
 [4] Camon E, Magrane M, Barrell D, Lee V, Dimmer E, Maslen J, Binns D, Harte N, Lopez R, Apweiler R (2004). The Gene Ontology Annotation (GOA) Database: sharing knowledge in Uniprot with Gene Ontology. Nucleic Acids Res, **32**(Database issue):D262-266.
+
+[5] Yachdav, G. et al. (2014). PredictProtein--an open resource for online prediction of protein structural and functional features. Nucleic Acids Res, **42**(Webserver issue):W337-43

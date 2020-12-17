@@ -28,7 +28,7 @@ For a given config-file, GO term prediction can be performed with the following 
 
 ## Embeddings
 
-Embeddings were calculated using the pre-trained models SeqVec, publicly available [in the SeqVec repository](https://github.com/Rostlab/SeqVec), or ProtBert-BFD, publicly available [in the ProtTrans repository](https://github.com/agemagician/ProtTrans)
+Embeddings were calculated using the pre-trained models SeqVec, publicly available [in the SeqVec repository](https://github.com/Rostlab/SeqVec), or ProtBert-BFD, publicly available [in the ProtTrans repository](https://github.com/agemagician/ProtTrans).
 
 The pre-computed embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from [ftp://rostlab.org/goPredSim](ftp://rostlab.org/goPredSim).
 
@@ -43,7 +43,7 @@ goPredSim is written in Python3. In order to execute goPredSim, Python3 has to b
 - scikit-learn
 
 ## Availability as web service
-If you are only interested in running a few sequences, goPredSim is also available as a web service: https://embed.protein.properties/ or as part of PredictProtein [5]: https://predictprotein.org/
+If you are interested in running only a few sequences, goPredSim is also available as a web service: https://embed.protein.properties/ or as part of PredictProtein [5]: https://predictprotein.org/
 
 ## Cite
 If you are using this method and find it helpful, we would appreciate if you could cite the following preprint:

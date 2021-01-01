@@ -1,0 +1,48 @@
+P0DTD1	GO:0051301	cell division
+P0DTD1	GO:0009617	response to bacterium
+P0DTD1	GO:0007156	homophilic cell adhesion via plasma membrane adhesion molecules
+P0DTD1	GO:0007601	visual perception
+P0DTD1	GO:0007049	cell cycle
+P0DTD1	GO:0007157	heterophilic cell-cell adhesion via plasma membrane cell adhesion molecules
+P0DTC1	GO:0039548	suppression by virus of host IRF3 activity
+P0DTC1	GO:0039520	induction by virus of host autophagy
+P0DTC1	GO:0039595	induction by virus of catabolism of host mRNA
+P0DTC1	GO:0019079	viral genome replication
+P0DTC1	GO:0019082	viral protein processing
+P0DTC1	GO:0006508	proteolysis
+P0DTC1	GO:0039502	suppression by virus of host type I interferon-mediated signaling pathway
+P0DTC1	GO:0039648	modulation by virus of host protein ubiquitination
+P0DTC1	GO:0039579	suppression by virus of host ISG15 activity
+P0DTC1	GO:0001172	transcription, RNA-templated
+P0DTC2	GO:0046718	viral entry into host cell
+P0DTC2	GO:0019064	fusion of virus membrane with host plasma membrane
+P0DTC2	GO:0046813	receptor-mediated virion attachment to host cell
+P0DTC2	GO:0009405	pathogenesis
+P0DTC2	GO:0039654	fusion of virus membrane with host endosome membrane
+P0DTC2	GO:0075509	endocytosis involved in viral entry into host cell
+P0DTC3	GO:0051259	protein complex oligomerization
+P0DTC3	GO:0039511	suppression by virus of host interferon receptor activity
+P0DTC3	GO:0034220	ion transmembrane transport
+P0DTC3	GO:0039502	suppression by virus of host type I interferon-mediated signaling pathway
+P0DTC3	GO:0039707	pore formation by virus in membrane of host cell
+P0DTC4	GO:0046760	viral budding from Golgi membrane
+P0DTC4	GO:0044662	disruption by virus of host cell membrane
+P0DTC5	GO:0030683	evasion or tolerance by virus of host immune response
+P0DTC5	GO:0019058	viral life cycle
+P0DTC6	GO:0016236	macroautophagy
+P0DTC6	GO:0006260	DNA replication
+P0DTC7	GO:0039646	modulation by virus of host G0/G1 transition checkpoint
+P0DTD8	GO:0001878	response to yeast
+P0DTD8	GO:0046513	ceramide biosynthetic process
+P0DTD8	GO:1904220	regulation of serine C-palmitoyltransferase activity
+P0DTD8	GO:0007029	endoplasmic reticulum organization
+P0DTC8	GO:0010951	negative regulation of endopeptidase activity
+P0DTC9	GO:0051123	RNA polymerase II preinitiation complex assembly
+P0DTC9	GO:0045944	positive regulation of transcription by RNA polymerase II
+P0DTC9	GO:0001113	transcriptional open complex formation at RNA polymerase II promoter
+P0DTC9	GO:0000122	negative regulation of transcription by RNA polymerase II
+A0A663DJA2	GO:0006487	protein N-linked glycosylation
+P0DTD2	GO:0043248	proteasome assembly
+P0DTD3	GO:0045058	T cell selection
+P0DTD3	GO:0002250	adaptive immune response
+P0DTD3	GO:0030217	T cell differentiation

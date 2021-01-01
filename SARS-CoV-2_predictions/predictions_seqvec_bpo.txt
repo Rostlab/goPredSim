@@ -1,0 +1,54 @@
+A0A663DJA2	GO:0010930	negative regulation of auxin mediated signaling pathway
+A0A663DJA2	GO:0048364	root development
+A0A663DJA2	GO:0009734	auxin-activated signaling pathway
+P0DTD8	GO:0046740	transport of virus in host, cell to cell
+P0DTC6	GO:0009405	pathogenesis
+P0DTD3	GO:0007283	spermatogenesis
+P0DTD3	GO:0043065	positive regulation of apoptotic process
+P0DTC4	GO:0046760	viral budding from Golgi membrane
+P0DTC4	GO:0044662	disruption by virus of host cell membrane
+P0DTD2	GO:0006412	translation
+P0DTC7	GO:0039646	modulation by virus of host G0/G1 transition checkpoint
+P0DTC8	GO:0006954	inflammatory response
+P0DTC8	GO:0045087	innate immune response
+P0DTC8	GO:0031666	positive regulation of lipopolysaccharide-mediated signaling pathway
+P0DTC5	GO:0019058	viral life cycle
+P0DTC5	GO:0030683	evasion or tolerance by virus of host immune response
+P0DTC3	GO:0034220	ion transmembrane transport
+P0DTC3	GO:0039707	pore formation by virus in membrane of host cell
+P0DTC3	GO:0051259	protein complex oligomerization
+P0DTC9	GO:0000413	protein peptidyl-prolyl isomerization
+P0DTC9	GO:0016567	protein ubiquitination
+P0DTC9	GO:0006457	protein folding
+P0DTC2	GO:0075509	endocytosis involved in viral entry into host cell
+P0DTC2	GO:0039654	fusion of virus membrane with host endosome membrane
+P0DTC2	GO:0009405	pathogenesis
+P0DTC2	GO:0046813	receptor-mediated virion attachment to host cell
+P0DTC2	GO:0019064	fusion of virus membrane with host plasma membrane
+P0DTC2	GO:0046718	viral entry into host cell
+P0DTC1	GO:0019079	viral genome replication
+P0DTC1	GO:0039648	modulation by virus of host protein ubiquitination
+P0DTC1	GO:0001172	transcription, RNA-templated
+P0DTC1	GO:0039548	suppression by virus of host IRF3 activity
+P0DTC1	GO:0039579	suppression by virus of host ISG15 activity
+P0DTC1	GO:0039520	induction by virus of host autophagy
+P0DTC1	GO:0039502	suppression by virus of host type I interferon-mediated signaling pathway
+P0DTC1	GO:0039595	induction by virus of catabolism of host mRNA
+P0DTC1	GO:0090305	nucleic acid phosphodiester bond hydrolysis
+P0DTC1	GO:0019082	viral protein processing
+P0DTC1	GO:0006508	proteolysis
+P0DTD1	GO:0039648	modulation by virus of host protein ubiquitination
+P0DTD1	GO:0032259	methylation
+P0DTD1	GO:0032508	DNA duplex unwinding
+P0DTD1	GO:0001172	transcription, RNA-templated
+P0DTD1	GO:0006351	transcription, DNA-templated
+P0DTD1	GO:0039644	suppression by virus of host NF-kappaB transcription factor activity
+P0DTD1	GO:0039579	suppression by virus of host ISG15 activity
+P0DTD1	GO:0039520	induction by virus of host autophagy
+P0DTD1	GO:0039502	suppression by virus of host type I interferon-mediated signaling pathway
+P0DTD1	GO:0090503	RNA phosphodiester bond hydrolysis, exonucleolytic
+P0DTD1	GO:0039595	induction by virus of catabolism of host mRNA
+P0DTD1	GO:0019083	viral transcription
+P0DTD1	GO:0039694	viral RNA genome replication
+P0DTD1	GO:0019082	viral protein processing
+P0DTD1	GO:0006508	proteolysis

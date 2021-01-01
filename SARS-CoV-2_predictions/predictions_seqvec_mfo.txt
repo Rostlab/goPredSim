@@ -1,0 +1,38 @@
+A0A663DJA2	GO:0009055	electron transfer activity
+A0A663DJA2	GO:0005506	iron ion binding
+A0A663DJA2	GO:0020037	heme binding
+P0DTD8	GO:0015078	proton transmembrane transporter activity
+P0DTC6	GO:0005125	cytokine activity
+P0DTC6	GO:0005126	cytokine receptor binding
+P0DTD3	GO:0005515	protein binding
+P0DTC4	GO:0015078	proton transmembrane transporter activity
+P0DTD2	GO:0003735	structural constituent of ribosome
+P0DTD2	GO:0000049	tRNA binding
+P0DTC7	GO:0005515	protein binding
+P0DTC7	GO:0005537	mannose binding
+P0DTC8	GO:0005515	protein binding
+P0DTC5	GO:0039660	structural constituent of virion
+P0DTC3	GO:0005216	ion channel activity
+P0DTC9	GO:0003723	RNA binding
+P0DTC2	GO:0042802	identical protein binding
+P0DTC2	GO:0046789	host cell surface receptor binding
+P0DTC1	GO:0004519	endonuclease activity
+P0DTC1	GO:0003968	RNA-directed 5'-3' RNA polymerase activity
+P0DTC1	GO:0036459	thiol-dependent ubiquitinyl hydrolase activity
+P0DTC1	GO:0008242	omega peptidase activity
+P0DTC1	GO:0004197	cysteine-type endopeptidase activity
+P0DTC1	GO:0003723	RNA binding
+P0DTC1	GO:0008270	zinc ion binding
+P0DTD1	GO:0004519	endonuclease activity
+P0DTD1	GO:0003724	RNA helicase activity
+P0DTD1	GO:0003968	RNA-directed 5'-3' RNA polymerase activity
+P0DTD1	GO:0008168	methyltransferase activity
+P0DTD1	GO:0000175	3'-5'-exoribonuclease activity
+P0DTD1	GO:0036459	thiol-dependent ubiquitinyl hydrolase activity
+P0DTD1	GO:0008242	omega peptidase activity
+P0DTD1	GO:0004197	cysteine-type endopeptidase activity
+P0DTD1	GO:0005524	ATP binding
+P0DTD1	GO:0003723	RNA binding
+P0DTD1	GO:0003678	DNA helicase activity
+P0DTD1	GO:0008270	zinc ion binding
+P0DTD1	GO:0042802	identical protein binding

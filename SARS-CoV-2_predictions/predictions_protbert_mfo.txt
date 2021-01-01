@@ -1,0 +1,31 @@
+P0DTD1	GO:0005509	calcium ion binding
+P0DTD1	GO:0005201	extracellular matrix structural constituent
+P0DTD1	GO:0050839	cell adhesion molecule binding
+P0DTD1	GO:0038023	signaling receptor activity
+P0DTD1	GO:0042803	protein homodimerization activity
+P0DTC1	GO:0003968	RNA-directed 5'-3' RNA polymerase activity
+P0DTC1	GO:0008270	zinc ion binding
+P0DTC1	GO:0036459	thiol-dependent ubiquitinyl hydrolase activity
+P0DTC1	GO:0003723	RNA binding
+P0DTC1	GO:0004197	cysteine-type endopeptidase activity
+P0DTC1	GO:0008242	omega peptidase activity
+P0DTC2	GO:0046789	host cell surface receptor binding
+P0DTC2	GO:0042802	identical protein binding
+P0DTC3	GO:0005216	ion channel activity
+P0DTC4	GO:0097020	COPII adaptor activity
+P0DTC5	GO:0039660	structural constituent of virion
+P0DTC6	GO:0015459	potassium channel regulator activity
+P0DTC7	GO:0008009	chemokine activity
+P0DTC7	GO:0016004	phospholipase activator activity
+P0DTC7	GO:0048020	CCR chemokine receptor binding
+P0DTC7	GO:0042056	chemoattractant activity
+P0DTC7	GO:0004698	calcium-dependent protein kinase C activity
+P0DTD8	GO:0004758	serine C-palmitoyltransferase activity
+P0DTC8	GO:0004869	cysteine-type endopeptidase inhibitor activity
+P0DTC9	GO:0003723	RNA binding
+A0A663DJA2	GO:0015181	arginine transmembrane transporter activity
+A0A663DJA2	GO:0015189	L-lysine transmembrane transporter activity
+P0DTD2	GO:0005515	protein binding
+P0DTD2	GO:0009055	electron transfer activity
+P0DTD3	GO:0008083	growth factor activity
+P0DTD3	GO:0008009	chemokine activity

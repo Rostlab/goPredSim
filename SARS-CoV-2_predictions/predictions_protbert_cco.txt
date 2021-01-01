@@ -1,0 +1,65 @@
+P0DTD1	GO:0032154	cleavage furrow
+P0DTD1	GO:0070062	extracellular exosome
+P0DTD1	GO:0005576	extracellular region
+P0DTD1	GO:0005604	basement membrane
+P0DTD1	GO:0005938	cell cortex
+P0DTD1	GO:0005912	adherens junction
+P0DTC1	GO:0033644	host cell membrane
+P0DTC1	GO:0030430	host cell cytoplasm
+P0DTC1	GO:0016020	membrane
+P0DTC1	GO:0044220	host cell perinuclear region of cytoplasm
+P0DTC1	GO:0016021	integral component of membrane
+P0DTC2	GO:0019031	viral envelope
+P0DTC2	GO:0019012	virion
+P0DTC2	GO:0020002	host cell plasma membrane
+P0DTC2	GO:0044173	host cell endoplasmic reticulum-Golgi intermediate compartment membrane
+P0DTC2	GO:0055036	virion membrane
+P0DTC2	GO:0016021	integral component of membrane
+P0DTC3	GO:0030430	host cell cytoplasm
+P0DTC3	GO:0019012	virion
+P0DTC3	GO:0005576	extracellular region
+P0DTC3	GO:0044385	integral to membrane of host cell
+P0DTC3	GO:0016020	membrane
+P0DTC3	GO:0044178	host cell Golgi membrane
+P0DTC3	GO:0044177	host cell Golgi apparatus
+P0DTC3	GO:0020002	host cell plasma membrane
+P0DTC3	GO:0016021	integral component of membrane
+P0DTC4	GO:0044172	host cell endoplasmic reticulum-Golgi intermediate compartment
+P0DTC4	GO:0016020	membrane
+P0DTC4	GO:0044178	host cell Golgi membrane
+P0DTC4	GO:0044177	host cell Golgi apparatus
+P0DTC4	GO:0016021	integral component of membrane
+P0DTC5	GO:0019031	viral envelope
+P0DTC5	GO:0030430	host cell cytoplasm
+P0DTC5	GO:0019012	virion
+P0DTC5	GO:0044178	host cell Golgi membrane
+P0DTC5	GO:0044177	host cell Golgi apparatus
+P0DTC5	GO:0055036	virion membrane
+P0DTC5	GO:0016021	integral component of membrane
+P0DTC6	GO:0005886	plasma membrane
+P0DTC6	GO:0016021	integral component of membrane
+P0DTC7	GO:0019012	virion
+P0DTC7	GO:0016020	membrane
+P0DTC7	GO:0044167	host cell endoplasmic reticulum membrane
+P0DTC7	GO:0044178	host cell Golgi membrane
+P0DTC7	GO:0044165	host cell endoplasmic reticulum
+P0DTC7	GO:0044177	host cell Golgi apparatus
+P0DTC7	GO:0044173	host cell endoplasmic reticulum-Golgi intermediate compartment membrane
+P0DTC7	GO:0016021	integral component of membrane
+P0DTD8	GO:0033644	host cell membrane
+P0DTD8	GO:0016020	membrane
+P0DTD8	GO:0016021	integral component of membrane
+P0DTC8	GO:0005773	vacuole
+P0DTC9	GO:0030430	host cell cytoplasm
+P0DTC9	GO:0044172	host cell endoplasmic reticulum-Golgi intermediate compartment
+P0DTC9	GO:0019012	virion
+P0DTC9	GO:0019013	viral nucleocapsid
+P0DTC9	GO:0044220	host cell perinuclear region of cytoplasm
+P0DTC9	GO:0044177	host cell Golgi apparatus
+A0A663DJA2	GO:0016020	membrane
+A0A663DJA2	GO:0016021	integral component of membrane
+P0DTD2	GO:0030430	host cell cytoplasm
+P0DTD2	GO:0016020	membrane
+P0DTD2	GO:0044162	host cell cytoplasmic vesicle membrane
+P0DTD2	GO:0044161	host cell cytoplasmic vesicle
+P0DTD3	GO:0016020	membrane

@@ -46,10 +46,9 @@ goPredSim is written in Python3. In order to execute goPredSim, Python3 has to b
 If you are interested in running only a few sequences, goPredSim is also available as a web service: https://embed.protein.properties/ or as part of PredictProtein [5]: https://predictprotein.org/
 
 ## Cite
-If you are using this method and find it helpful, we would appreciate if you could cite the following preprint:
+If you are using this method and find it helpful, we would appreciate if you could cite the following publication:
 
-Littmann M, Heinzinger M, Dallago C, Olenyi T, Rost B (2020). Embeddings from deep learning transfer GO annotations beyond homology. bioRxiv. (doi:  https://doi.org/10.1101/2020.09.04.282814)
-
+Littmann, M., Heinzinger, M., Dallago, C. et al. Embeddings from deep learning transfer GO annotations beyond homology. Sci Rep 11, 1160 (2021). https://doi.org/10.1038/s41598-020-80786-0
 
 ## References
 [1] Heinzinger M, Elnaggar A, Wang Y, Dallago C, Nechaev D, Matthes F, Rost B (2019). Modeling aspects of the language of life through transfer-learning protein sequences. BMC Bioinformatics, **20**:73.

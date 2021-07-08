@@ -39,6 +39,6 @@ class EmbeddingLookup(object):
         else:
             sys.exit("{} is not a correct distance metric\n"
                      "See <sklearn.metrics.pairwise.distance_metrics()> "
-                     "for all possible distance metrics".format(distance))
+                     "for all possible distance metrics".format(metric))
             
         return distances, query_ids

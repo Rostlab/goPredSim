@@ -53,7 +53,7 @@ class FunctionPrediction(object):
 
         for i in range(0, len(query_ids)):
             query = query_ids[i].split()[0]
-            dists = distances[i, :].squeeze().numpy()
+            dists = distances[i, :].squeeze()
             for h in hits:
                 prediction = dict()
                 if criterion == 'dist':  # extract hits within a certain distance
@@ -198,3 +198,19 @@ class FunctionPrediction(object):
                     del prediction[k]
 
         return prediction
+
+    @staticmethod
+    def write_predictions(predictions, out_file):
+        """
+        Write prediictions
+        :param predictions: predictions to write
+        :param out_file: output file
+        :return:
+        """
+        with open(out_file, 'w') as out:
+            for p in predictions.keys():
+                prediction = predictions[p]
+                for pred in prediction.keys():
+                    ri = prediction[pred]
+                    out.write('{}\t{}\t'.format(p, pred))
+                    out.write('{:0.2f}\n'.format(float(ri)))

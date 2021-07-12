@@ -57,8 +57,10 @@ class FunctionPrediction(object):
             for h in hits:
                 prediction = dict()
                 if criterion == 'dist':  # extract hits within a certain distance
+                    h = float(h)
                     indices = numpy.nonzero(dists <= h)
                 elif criterion == 'num':  # extract h closest hits
+                    h = int(h)
                     indices_tmp = numpy.argpartition(dists, h)[0:h]
                     dists_tmp = [dists[i] for i in indices_tmp]
                     max_dist = numpy.amax(dists_tmp)
@@ -140,8 +142,10 @@ class FunctionPrediction(object):
         dists = distances[0, :].squeeze().numpy()
 
         if criterion == 'dist':  # extract hits within a certain distance
+            k = float(k)
             indices = numpy.nonzero(dists <= k)
         elif criterion == 'num':  # extract h closest hits
+            k = int(k)
             indices_tmp = numpy.argpartition(dists, k)[0:k]
             dists_tmp = [dists[i] for i in indices_tmp]
             max_dist = numpy.amax(dists_tmp)

@@ -35,7 +35,7 @@ def main():
                                                                     config_data['modus'])
 
         # write predictions for each distance cutoff
-        for dist in dist_cutoffs:
+        for dist in predictions_all.keys():
             predictions = predictions_all[dist]
             predictions_out = '{}_{}_{}.txt'.format(config_data['output'], dist, o)
             FunctionPrediction.write_predictions(predictions, predictions_out)

@@ -1,5 +1,5 @@
 go: data/go_cafa3.obo
-lookup_set: data/seqvec_goa_2017.npz
+lookup_set: data/seqvec_goa_2017.npz  # please download from ftp://rostlab.org/goPredSim
 annotations: data/goa_annotations_2017.txt
 targets: data/seqvec_cafa3_targets.npz
 onto: all

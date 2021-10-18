@@ -30,9 +30,19 @@ For a given config-file, GO term prediction can be performed with the following 
 
 Embeddings were calculated using the pre-trained models SeqVec, publicly available [in the SeqVec repository](https://github.com/Rostlab/SeqVec), or ProtBert-BFD, publicly available [in the ProtTrans repository](https://github.com/agemagician/ProtTrans).
 
-The pre-computed embeddings (npy-files) for GOA2020 and GOA2017 can be downloaded from [ftp://rostlab.org/goPredSim](ftp://rostlab.org/goPredSim).
+The pre-computed embeddings (npy-files) for GOA2020 and GOA2017 (full and filtered with 100% sequence identity against the CAFA3 targets) can be downloaded from [ftp://rostlab.org/goPredSim](ftp://rostlab.org/goPredSim).
 
 The corresponding ids for the embeddings can be found in `data/`. To successfully run goPredSim both the .npy-file and the .txt-file containing the ids have to be in the same directory.
+
+## Annotations
+We provide the GOA annotations for Swiss-Prot sequences using
+- all annotations from 2017
+- all annotations from 2020
+- only experimental annotations from 2017
+- only experimental annotations from 2020
+
+in the `data/` folder.
+
 
 ## Requirements
 goPredSim is written in Python3. In order to execute goPredSim, Python3 has to be installed locally. Additionally, the following Python packages have to be installed:

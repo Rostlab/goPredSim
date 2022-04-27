@@ -1,5 +1,4 @@
 from sklearn.metrics import pairwise_distances, pairwise
-import torch
 import numpy
 import sys
 

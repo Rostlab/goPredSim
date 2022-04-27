@@ -1,6 +1,5 @@
 import sys
 import file_utils as fu
-import npy2npz as n2n
 from gene_ontology import GeneOntology
 from function_prediction import FunctionPrediction
 from pathlib import Path
@@ -13,8 +12,9 @@ def main():
     print(config_data)
 
     # read in embeddings, annotations, and GO
-    test_embeddings = n2n.get_dataset(Path(config_data['targets']), False)
-    embeddings = n2n.get_dataset(Path(config_data['lookup_set']), False)
+    test_embeddings = fu.read_embeddings(config_data['targets'])
+    embeddings = fu.read_embeddings(config_data['lookup_set'])
+
     go = GeneOntology(config_data['go'])
     go_annotations = fu.read_go_annotations(config_data['annotations'])
 

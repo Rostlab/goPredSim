@@ -47,10 +47,10 @@ in the `data/` folder.
 ## Requirements
 goPredSim is written in Python3. In order to execute goPredSim, Python3 has to be installed locally. Additionally, the following Python packages have to be installed:
 
-- torch
 - numpy
 - pathlib
 - scikit-learn
+- h5py
 
 ## Availability as web service
 If you are interested in running only a few sequences, goPredSim is also available as a web service: https://embed.protein.properties/ or as part of PredictProtein [5]: https://predictprotein.org/

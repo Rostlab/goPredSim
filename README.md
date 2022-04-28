@@ -26,6 +26,27 @@ For a given config-file, GO term prediction can be performed with the following 
 
 `python predict_go_embedding_inference.py config.txt`
 
+## Performance Assessment
+We show performance for the CAFA3 targets and 3 different versions of lookup sets (GOA2017, GOA2020, GOA2022) for SeqVec, ProtBert, and ProtT5 embeddings, respectively. 
+Performance is measured using the Fmax score following the CAFA assessment.
+
+| **Fmax**| | **BPO**|**MFO**|**CCO**|
+|-|-|-|-|-|
+||*SeqVec*|37±2%|50±3%|57±2%|
+|**GOA2017**|*ProtBERT*|36±2%|49±3%|59±2%|
+||*ProtT5*|38±2%|52±3%|59±2%|
+||*SeqVec*|51±2%|61±3%|65±2%|
+|**GOA2020**|*ProtBERT*|50±2%|59±2%|65±2%|
+||*ProtT5*|52±2%|61±2%|67±2%|
+||*SeqVec*||||
+|**GOA2022**|*ProtBERT*|49±2%|59±2%|64±2%|
+||*ProtT5*|51±2%|61±2%|66±2%|
+
+While originally, goPredSim was developed and assessed using SeqVec embeddings, we recommend to use ProtT5 embeddings now which were not available yet at the point of development of goPredSim.
+The improvement using those embeddings is only small, but consistent throughout all ontologies and datasets.
+
+Also, while the performance of goPredSim does not improve for the CAFA3 targets using the GOA2022 lookup set, we still recommend using this set. It contains the most and most recent annotations. Apparently, no new information was gained regarding the CAFA3 targets between 2020 and 2022, but in general, we assume that goPredSim benefits from more annotations available for annotation transfer.
+
 ## Embeddings
 
 Embeddings were calculated using the [bio_embeddings pipeline] [5].

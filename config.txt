@@ -1,7 +1,7 @@
-go: data/go_cafa3.obo
+go: data/GO/go_cafa3.obo
 lookup_set: data/seqvec_goa_2017.h5 # please download from ftp://rostlab.org/goPredSim
-annotations: data/goa_annotations_2017.txt
-targets: data/seqvec_cafa3_targets.h5
+annotations: data/goa_annotations/goa_annotations_2017.txt
+targets: data/target_embeddings/seqvec_cafa3_targets.h5
 onto: all
 thresh: 1
 modus: num

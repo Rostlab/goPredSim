@@ -38,7 +38,7 @@ Performance is measured using the Fmax score following the CAFA assessment.
 ||*SeqVec*|51±2%|61±3%|65±2%|
 |**GOA2020**|*ProtBERT*|50±2%|59±2%|65±2%|
 ||*ProtT5*|52±2%|61±2%|67±2%|
-||*SeqVec*||||
+||*SeqVec*|49±2%|59±2%|64±2%|
 |**GOA2022**|*ProtBERT*|49±2%|59±2%|64±2%|
 ||*ProtT5*|51±2%|61±2%|66±2%|
 

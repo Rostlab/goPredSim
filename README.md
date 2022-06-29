@@ -49,9 +49,13 @@ Also, while the performance of goPredSim does not improve for the CAFA3 targets 
 
 ## Embeddings
 
-Embeddings were calculated using the [bio_embeddings pipeline] [5].
+Embeddings were calculated using the [bio_embeddings pipeline](https://github.com/sacdallago/bio_embeddings) [5].
 
 The pre-computed embeddings (h5-files) for GOA2017, GOA2020, and GOA2022 (full and filtered with 100% sequence identity against the CAFA3 targets) can be downloaded from [ftp://rostlab.org/goPredSim](ftp://rostlab.org/goPredSim).
+
+The corresponding FASTA files are also available on [ftp://rostlab.org/goPredSim](ftp://rostlab.org/goPredSim).
+
+The FASTA file and the embeddings for the CAFA3 targets are available in the folder `data/target_embeddings/`
 
 ## Annotations
 We provide the GOA annotations for Swiss-Prot sequences using

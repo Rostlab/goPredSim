@@ -40,5 +40,10 @@ def main():
             predictions_out = '{}_{}_{}.txt'.format(config_data['output'], dist, o)
             FunctionPrediction.write_predictions(predictions, predictions_out)
 
+            # for compatibility with CAFA assessment tool use the following lines
+            # team_name = RandomTeam
+            # predictions_out = '{}_{}_all_go_{}.txt'.format(team_name, dist, o.upper())
+            # FunctionPrediction.write_predictions_cafa(predictions, predictions_out, dist, team_name)
+
 
 main()

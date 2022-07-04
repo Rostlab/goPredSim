@@ -51,17 +51,18 @@ def read_embeddings(embeddings_in):
     return embeddings
 
 
-def write_predictions_cafa(predictions, out_file, model_num):
+def write_predictions_cafa(predictions, out_file, model_num, team_name):
     """
     Write prediictions in CAFA format
     :param predictions: predictions to write
     :param out_file: output file
     :param model_num: number of model that is used
+    :param team_name: Team name to use in output file
     :return:
     """
     with open(out_file, 'w') as out:
-        out.write('AUTHOR\tRostlab2\nMODEL\t{}\nKEYWORDS\thomolog, machine learning, natural language processing.'
-                  '\n'.format(model_num))
+        out.write('AUTHOR\t{}\nMODEL\t{}\nKEYWORDS\thomolog, machine learning, natural language processing.'
+                  '\n'.format(team_name, model_num))
         for p in predictions.keys():
             prediction = predictions[p]
             for pred in prediction.keys():

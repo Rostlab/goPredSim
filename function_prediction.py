@@ -218,3 +218,24 @@ class FunctionPrediction(object):
                     ri = prediction[pred]
                     out.write('{}\t{}\t'.format(p, pred))
                     out.write('{:0.2f}\n'.format(float(ri)))
+                    
+    @staticmethod
+    def write_predictions_cafa(predictions, out_file, model_num, team_name):
+        """
+        Write prediictions in CAFA format
+        :param predictions: predictions to write
+        :param out_file: output file
+        :param model_num: number of model that is used
+        :param team_name: Team name to use in output file
+        :return:
+        """
+    with open(out_file, 'w') as out:
+        out.write('AUTHOR\t{}\nMODEL\t{}\nKEYWORDS\thomolog, machine learning, natural language processing.'
+                  '\n'.format(team_name, model_num))
+        for p in predictions.keys():
+            prediction = predictions[p]
+            for pred in prediction.keys():
+                ri = prediction[pred]
+                out.write('{}\t{}\t'.format(p, pred))
+                out.write('{:0.2f}\n'.format(float(ri)))
+        out.write('END')

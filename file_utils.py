@@ -46,7 +46,11 @@ def read_embeddings(embeddings_in):
     embeddings = dict()
     with h5py.File(embeddings_in, 'r') as f:
         for key, embedding in f.items():
-            original_id = embedding.attrs['original_id']
+            if 'original_id' in list(embedding.attrs):
+                original_id = embedding.attrs['original_id']
+            else:
+                # EP - My own h5 embeddings seem to not have any attributes
+                original_id = key
             embeddings[original_id] = np.array(embedding)
             
     return embeddings

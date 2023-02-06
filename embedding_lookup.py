@@ -9,7 +9,7 @@ class EmbeddingLookup(object):
         self.embedding_db = dict()
 
         for e in embedding_db.keys():
-            embedding = embedding_db[e]
+            embedding = embedding_db[e][0]
             self.embedding_db[e] = embedding
 
         # prepare data

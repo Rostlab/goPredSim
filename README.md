@@ -1,6 +1,8 @@
 # goPredSim - Inference based on embedding similarity
 
-[![Publication](https://img.shields.io/badge/10%2E1038%2Fs41598--020--80786--0?label=Publication)](https://doi.org/10.1038/s41598-020-80786-0) [![Static Badge](https://img.shields.io/badge/10%2E5281%2Fzenodo%2E14260590?label=Dataset)](https://doi.org/10.5281/zenodo.14260590)
+[![Publication](https://img.shields.io/badge/10.1038%2Fs41598--020--80786--0-blue?label=Publication)](https://doi.org/10.1038/s41598-020-80786-0)
+
+[![Dataset](https://img.shields.io/badge/10.5281%2Fzenodo.14260590-blue?label=Dataset)](https://doi.org/10.5281/zenodo.14260590)
 
 goPredSim is a method to predict GO terms through annotation transfer annotation transfer not using sequence similarity, but similarity in embedding space. To this end, the method uses SeqVec [1], ProtBert-BFD [2], or ProtT5 [2] embeddings. goPredSim is a fast, simple, and easy-to-use inference method that achieves performance superior to commonly used homology-based inference.
 

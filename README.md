@@ -1,5 +1,7 @@
 # goPredSim - Inference based on embedding similarity
 
+[![Publication](https://img.shields.io/badge/10.1038%2Fs41598--020--80786--0?label=Publication)](https://doi.org/10.1038/s41598-020-80786-0) [![Dataset](https://img.shields.io/badge/10.5281%2Fzenodo.14260590?label=Dataset)](https://doi.org/10.5281/zenodo.14260590)
+
 goPredSim is a method to predict GO terms through annotation transfer annotation transfer not using sequence similarity, but similarity in embedding space. To this end, the method uses SeqVec [1], ProtBert-BFD [2], or ProtT5 [2] embeddings. goPredSim is a fast, simple, and easy-to-use inference method that achieves performance superior to commonly used homology-based inference.
 
 ## How goPredSim works
@@ -51,9 +53,7 @@ Also, while the performance of goPredSim does not improve for the CAFA3 targets 
 
 Embeddings were calculated using the [bio_embeddings pipeline](https://github.com/sacdallago/bio_embeddings) [5].
 
-The pre-computed embeddings (h5-files) and the corresponding FASTA files for GOA2017, GOA2020, and GOA2022 (full and filtered with 100% sequence identity against the CAFA3 targets) can be downloaded from [https://rostlab.org/public/goPredSim/](https://rostlab.org/public/goPredSim/).
-
-The FASTA file and the embeddings for the CAFA3 targets are available in the folder `data/target_embeddings/`
+The pre-computed embeddings (h5-files) and the corresponding FASTA files for GOA2017, GOA2020, and GOA2022 (full and filtered with 100% sequence identity against the CAFA3 targets) can be downloaded from [Zenodo](https://doi.org/10.5281/zenodo.14260590).
 
 ## Annotations
 We provide the GOA annotations for Swiss-Prot sequences using
